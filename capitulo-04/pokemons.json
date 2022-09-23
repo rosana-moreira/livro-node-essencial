@@ -1,0 +1,24 @@
+{
+  "pokemons": [
+    {
+      "name": "Bulbasaur",
+      "type": "Leaf",
+      "description": "Não há informações sobre esse pokemon."
+    },
+    {
+      "name": "Squirtle",
+      "type": "Water",
+      "description": "Não há informações sobre esse pokemon."
+    },
+    {
+      "name": "Charmander",
+      "type": "Fire",
+      "description": "Não há informações sobre esse pokemon."
+    },
+    {
+      "name": "Pikachu",
+      "type": "Eletric",
+      "description": "Não há informações sobre esse pokemon."
+    }
+  ]
+}
