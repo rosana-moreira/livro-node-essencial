@@ -1,0 +1,21 @@
+{
+  "name": "cap05",
+  "version": "1.0.0",
+  "description": "exemplo do capitulo 05",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "nodemon": "nodemon app.js"
+  },
+  "keywords": [
+    "livro",
+    "node"
+  ],
+  "author": "Rosana Moreira",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.20"
+  }
+}
