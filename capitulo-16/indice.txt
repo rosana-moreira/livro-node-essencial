@@ -1,0 +1,8 @@
+ Instalar o arquivo de configuração
+>npm install config
+
+Instalar o framework de testes unitários
+>npm install mocha --save
+
+Instalar o framework de Segurança de Web services
+npm install express-basic-auth --save

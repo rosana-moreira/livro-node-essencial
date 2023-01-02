@@ -1,0 +1,11 @@
+{
+"mysqlConfig":{
+    "host":"localhost",
+    "user": "root",
+    "password": "123456789",
+    "database":"carros"
+},
+"basicAuth":{
+    "root": "123456789"
+}
+}

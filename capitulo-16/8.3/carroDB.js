@@ -1,13 +1,10 @@
 var mysql = require("mysql2");
+let config = require('config');
 
 class carroDB {
   static connect() {
-    const connection = mysql.createConnection({
-      host: "localhost",
-      user: "root",
-      password: "123456789",
-      database: "carros",
-    });
+  let dbConfig = config.get("mysqlconfig");
+  let connection = mysql.createConnection(dbConfig);
     connection.connect();
     return connection;
   }
@@ -20,6 +17,19 @@ class carroDB {
         throw error;
       }
       callback(results);
+    });
+    console.log(query.sql);
+    connection.end();
+  }
+  static save(carro, callback) {
+    let connection = carroDB.connect();
+    let sql = "insert into carro set ? ";
+    let query = connection.query(sql, carro, function (error, results, fields) {
+      if (error) {
+        throw error;
+      }
+      carro.id = results.insertId;
+      callback(carro);
     });
     console.log(query.sql);
     connection.end();

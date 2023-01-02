@@ -6,7 +6,7 @@ var callback = function (request, response) {
 
   var parts = url.parse(request.url);
 
-  if (parts.path == "/teste") {
+  if (parts.path === "/teste") {
     response.end('{"nome":"Rosana","sobrenome":"Moreira"}');
   } else {
     response.end("Rota invalida:" + parts.path);

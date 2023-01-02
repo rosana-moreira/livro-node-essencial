@@ -8,7 +8,7 @@ var callback = function (request, response) {
 
   var parts = url.parse(request.url);
 
-  if (parts.path == "/teste") {
+  if (parts.path === "/teste") {
     var pessoa = { nome: "Rosana", sobrenome: "Moreira" };
     var json = JSON.stringify(pessoa);
     response.end(json);
